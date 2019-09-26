@@ -3,7 +3,7 @@ This is a block-based editor for SQL (on the basis of Google's blockly (https://
 
 ![BlocklySQL example snippet](example.JPG)
 
-This first example uses a weather database and returns the number of locations where more than five gale-force winds have been recorded. It is equivalent to the following SELECT-statement in SQL:
+This first example uses a weather database and returns the locations where more than five gale-force winds with the  have been recorded (and the corresponding number of gale-force winds). It is equivalent to the following SELECT-statement in SQL:
 
 ```
 SELECT Wetterstation.Standort, Wettermessung.Max_Windgeschwindigkeit AS #Orkanböen
