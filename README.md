@@ -39,3 +39,10 @@ You are welcome to use our editor for educational purposes.
 ## Contributing
 
 In case you want to extend or adapt our editor go ahead and fork this repo. We are interested in your ideas so please let us know about your them and show us what you have done. 
+
+### Adding new blocks
+
+New blocks can be added by creating `new_block.js` in the folder `sql/js/sql_blocks`. Additionally, for the new block to appear in the toolbox you have to import the file (using `<script></script>`) and add it to the toolbox in `index.html`.
+
+The code of a block for our editor looks similiar to the code of the `AND` block:
+
