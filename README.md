@@ -17,7 +17,16 @@ ORDER BY Wettermessung.Max_Windgeschwindigkeit DESC;
 
 ## Elements
 
-We have created many blocky to build SQL queries. So far the following blocks have been introduced:
+We have created many blocky to build SQL queries with our editor. So far the following blocks have been created:
+
+| BlocklySQL | Explanation |
+| :-: | :-: |
+| ![Statements and clauses]() | `Statements and clauses` |
+| ![Tables and attributes]() | `Tables and attributes` |
+| ![(Logical) operators]() | `(Logical) operators` |
+| ![(Mathematical) operators]() | `(Mathematical) operators` |
+| ![Value inputs]() | `Value inputs` |
+| ![Aggregate functions]() | `Aggregate functions` |
 
 ## Example projects
 
@@ -27,6 +36,6 @@ So far our editor has been included in the project "dbup2date" (https://dbup2dat
 
 You are welcome to use our editor for educational purposes. 
 
-## Developing
+## Contributing
 
 In case you want to extend or adapt our editor go ahead and fork this repo. We are interested in your ideas so please let us know about your them and show us what you have done. 
