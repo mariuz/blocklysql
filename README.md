@@ -17,7 +17,7 @@ ORDER BY Wettermessung.Max_Windgeschwindigkeit DESC;
 
 ## Elements
 
-We have created many blocky to build SQL queries with our editor. So far the following blocks have been created:
+We have created several blocks to build queries with our editor. So far the following blocks have been created:
 
 | BlocklySQL | Explanation |
 | :-: | :-: |
