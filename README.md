@@ -34,7 +34,7 @@ So far our editor has been included in the project "dbup2date" (https://dbup2dat
 
 ## Installing
 
-You are welcome to use our editor for educational purposes. 
+You are welcome to use our editor. 
 
 ## Contributing
 
@@ -46,3 +46,49 @@ New blocks can be added by creating `new_block.js` in the folder `sql/js/sql_blo
 
 The code of a block for our editor looks similiar to the code of the `AND` block:
 
+Block definition:
+
+```
+Blockly.defineBlocksWithJsonArray([
+    {
+        "type": "and",
+        "message0": "AND %1",
+        "args0": [
+            {
+                "type": "input_value",
+                "name": "con1",
+                "check": ["Number", "COMPARE", "NULLIFIER", "INNIFIER", "OR", 'NOT', 'AND', 'BETWEEN']
+            }
+        ],
+        "message1": "    %1",
+        "args1": [
+            {
+                "type": "input_value",
+                "name": "con2",
+                "check": ["Number", "COMPARE", "NULLIFIER", "INNIFIER", "OR", 'NOT', 'AND', 'BETWEEN']
+            }
+        ],
+        "output": "AND",
+        "colour": '#5270DE',
+        "helpUrl": "",
+    },
+]);
+```
+
+Block functions:
+
+```
+Blockly.JavaScript['and'] = function(block) {
+    var argument0 = Blockly.JavaScript.statementToCode(block, 'con1');
+    var argument1 = Blockly.JavaScript.statementToCode(block, 'con2');
+    var n = 2;
+    var code = argument0 + ' AND ' + argument1 + ' ';
+    while (block.getInput('con' + n)) {
+        var additionalCode = Blockly.JavaScript.statementToCode(block, 'con' + n);
+        code = code.concat('AND ' + additionalCode);
+        ++n;
+    } ;
+    code = '\u0028' + code + '\u0029';
+    return code;
+};
+```
