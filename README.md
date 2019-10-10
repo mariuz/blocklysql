@@ -30,7 +30,7 @@ We have created several blocks to build queries with our editor. So far the foll
 
 ## Demo & Example projects
 
-A demo of our editor can be found here: 
+A demo of our editor can be found here: https://go.uniwue.de/blocklysql. 
 So far this editor has been included in the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (football, weather) to use in CS classrooms. 
 
 ## Installing
