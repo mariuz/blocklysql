@@ -1,16 +1,16 @@
 Blockly.Blocks['datepicker'] = {
     init: function() {
         this.appendDummyInput()
-            .appendField("Jahr:")
+            .appendField("Year:")
             .appendField(new Blockly.FieldNumber(2018), "date_year");
         this.appendDummyInput()
-            .appendField("Monat:")
+            .appendField("Month:")
             .appendField(new Blockly.FieldNumber(0, 1, 12), "date_month");
         this.appendDummyInput()
-            .appendField("Tag:")
+            .appendField("Day:")
             .appendField(new Blockly.FieldNumber(0, 1, 31), "date_day");
         this.appendDummyInput()
-            .appendField("Stunde:")
+            .appendField("Hour:")
             .appendField(new Blockly.FieldNumber(0, 0, 23), "date_time");
         this.setInputsInline(true);
         this.setOutput(true, "DatePicker");
