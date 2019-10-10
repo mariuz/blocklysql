@@ -21,8 +21,8 @@ We have created several blocks to build queries with our editor. So far the foll
 
 | BlocklySQL | Explanation |
 | :-: | :-: |
-| ![Statements and clauses]() | `Statements and clauses` |
-| ![Tables and attributes]() | `Tables and attributes` |
+| ![Statements and clauses](images/statements_clauses.JPG) | `Statements and clauses` |
+| ![Tables and attributes](images/tables_attributes.JPG) | `Tables and attributes` |
 | ![(Logical) operators]() | `(Logical) operators` |
 | ![(Mathematical) operators]() | `(Mathematical) operators` |
 | ![Value inputs]() | `Value inputs` |
