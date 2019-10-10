@@ -37,7 +37,10 @@ This sample database is from: http://www.mysqltutorial.org/mysql-sample-database
 ![Class diagramm classicmodels](classicmodels/classicmodels.JPG)
 
 A demo of our editor using this database can be found here: https://go.uniwue.de/blocklysql. 
-So far this editor has been included in the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (football, weather) to use in CS classrooms. 
+
+### Weather and Football 
+
+In another example project we integrated our editor into the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (football, weather) to use in the classroom. 
 
 ## Installing
 
