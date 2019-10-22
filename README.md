@@ -30,13 +30,13 @@ We have created several blocks to build queries with our editor. So far the foll
 
 ## Demo & Example projects
 
-### Classicmodels
+### Classicmodels (MySQL tutorial)
 
 This sample database is from: http://www.mysqltutorial.org/mysql-sample-database.aspx. The `classicmodels` database is a retailer of scale models of classic cars database. It contains typical business data such as customers, products, sales orders, sales order line items, etc.
 
 A demo of our editor using this database can be found here: https://go.uniwue.de/blocklysql.
 
-### Weather and Football
+### Weather and Football (Project "dbup2date")
 
 In another example project we integrated our editor into the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (`football`, `weather`) to use in the classroom.
 
