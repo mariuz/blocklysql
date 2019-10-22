@@ -242,7 +242,7 @@ Blockly.Blocks['lists_select'] = {
         if (i == 0) {
           input.appendField("SELECT");
           input.setCheck(['freeinput', "tablename_as", "ALL", "CONDITIONCHOOSER", "aggregate_min", "aggregate_max", "aggregate_avg", "aggregate_sum", "aggregate_count"]);
-          input.appendField(new Blockly.FieldDropdown([["\u2009", 'blank'], ["ALL", 'all'], ["DISTINCT", 'distinct']]), 'option');
+          input.appendField(new Blockly.FieldDropdown([["\u2009", 'blank'], ["DISTINCT", 'distinct']]), 'option');
         }
       }
     }
