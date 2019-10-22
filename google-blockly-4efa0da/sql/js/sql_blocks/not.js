@@ -15,6 +15,6 @@ Blockly.defineBlocksWithJsonArray([
     },
 ]);// NOT-Block in Workspace
 Blockly.JavaScript['not'] = function(block) {
-    var code = 'NOT ' + Blockly.JavaScript.statementToCode(block, 'Con0');
+    var code = 'not ' + Blockly.JavaScript.statementToCode(block, 'Con0');
     return code;
 };//CodeGenerator NOT

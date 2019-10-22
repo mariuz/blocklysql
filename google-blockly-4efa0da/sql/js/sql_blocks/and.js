@@ -27,10 +27,10 @@ Blockly.JavaScript['and'] = function(block) {
     var argument0 = Blockly.JavaScript.statementToCode(block, 'Con0');
     var argument1 = Blockly.JavaScript.statementToCode(block, 'sCon0');
     var n = 1;
-    var code = argument0 + ' AND ' + argument1 + ' ';
+    var code = argument0 + ' and ' + argument1 + ' ';
     while (block.getInput('Con' + n)) {
         var additionalCode = Blockly.JavaScript.statementToCode(block, 'Con' + n);
-        code = code.concat('AND ' + additionalCode);
+        code = code.concat('and ' + additionalCode);
         ++n;
     } ;
     code = '\u0028' + code + '\u0029';

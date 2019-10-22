@@ -3,7 +3,7 @@ Blockly.Blocks['select_groupby'] = {
         this.appendValueInput('groupInput')
             .setCheck(['freeinput', "CONDITIONCHOOSER"])
             .setAlign(Blockly.ALIGN_LEFT)
-            .appendField("GROUP BY           ");
+            .appendField("GROUP BY ");
         this.setPreviousStatement(true, ['WHERE', 'FROM']);
         this.setNextStatement(true, ['GROUP BY', 'HAVING']);
         this.setColour('#8007f2');
@@ -13,5 +13,5 @@ Blockly.Blocks['select_groupby'] = {
 };
 Blockly.JavaScript['select_groupby'] = function(block) {
     var code = Blockly.JavaScript.statementToCode(block, 'groupInput');
-    return 'GROUP BY ' + code + ';';
+    return 'group by ' + code + ';';
 }

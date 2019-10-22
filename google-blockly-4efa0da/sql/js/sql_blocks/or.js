@@ -27,7 +27,7 @@ Blockly.JavaScript['or'] = function(block) {
     var argument0 = Blockly.JavaScript.statementToCode(block, 'Con0');
     var argument1 = Blockly.JavaScript.statementToCode(block, 'sCon0');
     var n = 1;
-    var code = argument0 + ' OR ' + argument1 + ' ';//BITTERBÖSES WHITESPACE!!!! BEACHTEN
+    var code = argument0 + ' or ' + argument1 + ' ';
     while (block.getInput('Con' + n)) {
         var additionalCode = Blockly.JavaScript.statementToCode(block, 'Con' + n);
         code = code.concat('OR ' + additionalCode);

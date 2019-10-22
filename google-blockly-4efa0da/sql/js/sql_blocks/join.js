@@ -52,13 +52,13 @@ Blockly.JavaScript['all_join'] = function(block) {
     else{
         nostatement = Blockly.JavaScript.statementToCode(block, 'noSTATEMENT');
     }
-    var code = /*table + ' ' + */type + ' JOIN' + ' ';
+    var code = /*table + ' ' + */type + ' join' + ' ';
     if(this.getFieldValue('modifierActive') == 'onModifier'){
         if(statement == ''){
-            code = code.concat('' + join + ' ' + 'ON' + ' ');
+            code = code.concat('' + join + ' ' + 'on' + ' ');
         }
         else{
-            code = code.concat('' + join + ' ' + 'ON' + statement + ' ');
+            code = code.concat('' + join + ' ' + 'on' + statement + ' ');
         }
     }
     else{

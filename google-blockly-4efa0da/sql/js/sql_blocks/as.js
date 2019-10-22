@@ -38,6 +38,6 @@ Blockly.Extensions.register('assExtensions', function(){
 Blockly.JavaScript['tablename_as'] = function(block) {
     var argumentOld = Blockly.JavaScript.statementToCode(block, 'as_oldName');
     var argumentNew = Blockly.JavaScript.statementToCode(block, 'as_newName');
-    var code = argumentOld + ' AS ' + argumentNew;
+    var code = argumentOld + ' as ' + argumentNew;
     return code;
 };

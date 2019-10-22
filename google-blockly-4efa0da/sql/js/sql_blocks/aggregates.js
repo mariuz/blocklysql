@@ -101,33 +101,33 @@ Blockly.JavaScript['aggregate_min'] = function(block) {
     var argument = Blockly.JavaScript.statementToCode(block, 'min');
     argument = argument.substring(0, argument.length);
     argument = argument.trim();
-    var code = 'MIN(';
+    var code = 'min(';
     if(argument.includes(',')){
         argument = argument.replace(',', '),');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', AVG')){
-        argument = argument.replace(', AVG', ') AVG');
+    else if(argument.includes(', avg')){
+        argument = argument.replace(', avg', ') avg');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', SUM')){
-        argument = argument.replace(', SUM', ') SUM');
+    else if(argument.includes(', sum')){
+        argument = argument.replace(', sum', ') sum');
         code = code.concat(argument);
     }
-    else if(argument.includes(', COUNT')){
-        argument = argument.replace(', COUNT', ') COUNT');
+    else if(argument.includes(', count')){
+        argument = argument.replace(', count', ') count');
         code = code.concat(argument);
     }
     else{
-        code = 'MIN(' + argument + ') ';
+        code = 'min(' + argument + ') ';
     }
 
     //parent is ORDER BY?!:
@@ -146,33 +146,33 @@ Blockly.JavaScript['aggregate_avg'] = function(block) {
     var argument = Blockly.JavaScript.statementToCode(block, 'avg');
     argument = argument.substring(0, argument.length);
     argument = argument.trim();
-    var code = 'AVG(';
+    var code = 'avg(';
     if(argument.includes(',')){
         argument = argument.replace(',', '),');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MIN')){
-        argument = argument.replace(', MIN', ') MIN');
+    else if(argument.includes(', min')){
+        argument = argument.replace(', min', ') min');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', SUM')){
-        argument = argument.replace(', SUM', ') SUM');
+    else if(argument.includes(', sum')){
+        argument = argument.replace(', sum', ') sum');
         code = code.concat(argument);
     }
-    else if(argument.includes(', COUNT')){
-        argument = argument.replace(', COUNT', ') COUNT');
+    else if(argument.includes(', count')){
+        argument = argument.replace(', count', ') count');
         code = code.concat(argument);
     }
     else{
-        code = 'AVG(' + argument + ') ';
+        code = 'avg(' + argument + ') ';
     }
 
     var chosenOrderA = '';
@@ -190,33 +190,33 @@ Blockly.JavaScript['aggregate_max'] = function(block) {
     var argument = Blockly.JavaScript.statementToCode(block, 'max');
     argument = argument.substring(0, argument.length);
     argument = argument.trim();
-    var code = 'MAX(';
+    var code = 'max(';
     if(argument.includes(',')){
         argument = argument.replace(',', '),');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MIN')){
-        argument = argument.replace(', MIN', ') MIN');
+    else if(argument.includes(', min')){
+        argument = argument.replace(', min', ') min');
         code = code.concat(argument);
     }
-    else if(argument.includes(', AVG')){
-        argument = argument.replace(', AVG', ') AVG');
+    else if(argument.includes(', avg')){
+        argument = argument.replace(', avg', ') avg');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', SUM')){
-        argument = argument.replace(', SUM', ') SUM');
+    else if(argument.includes(', sum')){
+        argument = argument.replace(', sum', ') sum');
         code = code.concat(argument);
     }
-    else if(argument.includes(', COUNT')){
-        argument = argument.replace(', COUNT', ') COUNT');
+    else if(argument.includes(', count')){
+        argument = argument.replace(', count', ') count');
         code = code.concat(argument);
     }
     else{
-        code = 'MAX(' + argument + ') ';
+        code = 'max(' + argument + ') ';
     }
 
     var chosenOrderA = '';
@@ -234,33 +234,33 @@ Blockly.JavaScript['aggregate_sum'] = function(block) {
     var argument = Blockly.JavaScript.statementToCode(block, 'sum');
     argument = argument.substring(0, argument.length);
     argument = argument.trim();
-    var code = 'SUM(';
+    var code = 'sum(';
     if(argument.includes(',')){
         argument = argument.replace(',', '),');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', AVG')){
-        argument = argument.replace(', AVG', ') AVG');
+    else if(argument.includes(', avg')){
+        argument = argument.replace(', avg', ') avg');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MIN')){
-        argument = argument.replace(', MIN', ') MIN');
+    else if(argument.includes(', min')){
+        argument = argument.replace(', min', ') min');
         code = code.concat(argument);
     }
-    else if(argument.includes(', COUNT')){
-        argument = argument.replace(', COUNT', ') COUNT');
+    else if(argument.includes(', count')){
+        argument = argument.replace(', count', ') count');
         code = code.concat(argument);
     }
     else{
-        code = 'SUM(' + argument + ') ';
+        code = 'sum(' + argument + ') ';
     }
 
     var chosenOrderA = '';
@@ -278,33 +278,33 @@ Blockly.JavaScript['aggregate_count'] = function(block) {
     var argument = Blockly.JavaScript.statementToCode(block, 'count');
     argument = argument.substring(0, argument.length);
     argument = argument.trim();
-    var code = 'COUNT(';
+    var code = 'count(';
     if(argument.includes(',')){
         argument = argument.replace(',', '),');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', AVG')){
-        argument = argument.replace(', AVG', ') AVG');
+    else if(argument.includes(', avg')){
+        argument = argument.replace(', avg', ') avg');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MAX')){
-        argument = argument.replace(', MAX', ') MAX');
+    else if(argument.includes(', max')){
+        argument = argument.replace(', max', ') max');
         code = code.concat(argument);
     }
-    else if(argument.includes(', SUM')){
-        argument = argument.replace(', SUM', ') SUM');
+    else if(argument.includes(', sum')){
+        argument = argument.replace(', sum', ') sum');
         code = code.concat(argument);
     }
-    else if(argument.includes(', MIN')){
-        argument = argument.replace(', MIN', ') MIN');
+    else if(argument.includes(', min')){
+        argument = argument.replace(', min', ') min');
         code = code.concat(argument);
     }
     else{
-        code = 'COUNT(' + argument + ') ';
+        code = 'count(' + argument + ') ';
     }
 
     var chosenOrderA = '';

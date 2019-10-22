@@ -25,7 +25,7 @@ Blockly.defineBlocksWithJsonArray([
 Blockly.JavaScript['between'] = function(block) {
     var argument0 = Blockly.JavaScript.statementToCode(block, 'Con0');
     var argument1 = Blockly.JavaScript.statementToCode(block, 'Con1');
-    var code = argument0 + ' BETWEEN ' + argument1;
+    var code = argument0 + ' between ' + argument1;
     code = code.replace('(', '');
     code = code.replace(')', '');
     return code;

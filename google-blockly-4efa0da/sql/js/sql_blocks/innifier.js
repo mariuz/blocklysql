@@ -37,7 +37,7 @@ Blockly.JavaScript['innifier'] = function(block) {
     if(operator == 'IN' || operator == 'NOT IN'){
         if(argument1.includes(';')){
             if(argument1.includes(';SELECT')){
-                argument1 = argument1.replace(/;SELECT/g, '<BR> UNION <BR>SELECT');
+                argument1 = argument1.replace(/;SELECT/g, '<BR> union <BR>select');
             }
             argument1 = argument1.replace(/;/g, ' ');
         }

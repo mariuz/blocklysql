@@ -262,7 +262,7 @@ Blockly.Blocks['lists_create_with_container'] = {
   init: function() {
     this.setStyle('list_blocks');
     this.appendDummyInput()
-        .appendField("Attribute");
+        .appendField("attributes");
     this.appendStatementInput('STACK');
     this.setTooltip();
     this.contextMenu = false;
@@ -277,7 +277,7 @@ Blockly.Blocks['lists_create_with_item'] = {
   init: function() {
     this.setStyle('list_blocks');
     this.appendDummyInput()
-        .appendField("Attribut");
+        .appendField("attribute");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip("");
@@ -304,14 +304,6 @@ Blockly.JavaScript['lists_select'] = function(block) {
     }
     else if(select.includes(' * ')){
         select = select.substring(0,select.length-1);
-    }
-    if(select.includes("AS")){
-        select = select + '"';
-        select = select.replace(/'/g, '"');
-    }
-    else if(select.includes("'" || '"') && select.includes("'," || '",')){
-        select = select + '"';
-        select = select.replace(/'/g, '"');
     }
 
     var option = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('option'));

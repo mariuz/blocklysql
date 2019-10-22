@@ -13,5 +13,5 @@ Blockly.Blocks['select_where'] = {
 };
 Blockly.JavaScript['select_where'] = function(block) {
     var code = Blockly.JavaScript.statementToCode(block, 'whereInput');
-    return 'WHERE ' + code + ';';
+    return 'where ' + code + ';';
 }

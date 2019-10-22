@@ -24,7 +24,7 @@ Blockly.JavaScript['select_orderby'] = function(block) {
     }
     code = code.replace(/blank/g, ',');
     code = code.replace(/SC/g, 'SC,');
-    code = 'ORDER BY ' + code + ';'
+    code = 'order by ' + code + ';'
     code = code.replace(',;', ';');
     return code;
 }

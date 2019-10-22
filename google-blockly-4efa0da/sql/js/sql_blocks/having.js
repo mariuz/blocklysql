@@ -14,5 +14,5 @@ Blockly.Blocks['select_having'] = {
 };
 Blockly.JavaScript['select_having'] = function(block) {
     var code = Blockly.JavaScript.statementToCode(block, 'haveInput');
-    return 'HAVING ' + code + ';';
+    return 'having ' + code + ';';
 }
