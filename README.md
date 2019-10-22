@@ -22,11 +22,11 @@ We have created several blocks to build queries with our editor. So far the foll
 | BlocklySQL | Explanation |
 | :-: | :-: |
 | ![Statements and clauses](images/statements_clauses.JPG) | `Statements and clauses` |
-| ![Tables and attributes]() | `Tables and attributes` |
+| ![Tables and attributes](images/tables_attributes.JPG) | `Tables and attributes` |
 | ![(Logical) operators](images/logical.JPG) | `(Logical) operators (e.g. AND)` |
-| ![(Mathematical) operators]() | `(Mathematical) operators (e.g. EQUALS)` |
-| ![Value inputs](images/value_inputs.jpg) | `Value inputs ` |
-| ![Aggregate functions]() | `Aggregate functions (e.g. COUNT)` |
+| ![(Mathematical) operators](images/mathematical.JPG) | `(Mathematical) operators (e.g. EQUALS)` |
+| ![Value inputs](images/value_inputs.JPG) | `Value inputs ` |
+| ![Aggregate functions](images/aggregate_functions.JPG) | `Aggregate functions (e.g. COUNT)` |
 
 ## Demo & Example projects
 
