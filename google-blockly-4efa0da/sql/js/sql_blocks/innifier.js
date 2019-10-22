@@ -43,6 +43,6 @@ Blockly.JavaScript['innifier'] = function(block) {
         }
         argument1 = '(' + argument1 + ')';
     }
-    var code = argument0 + ' ' + operator + ' ' + argument1 + 'ThIsDeFiNeSiNeNd';
+    var code = argument0 + ' ' + operator + ' ' + argument1;
     return code;
 };
