@@ -52,16 +52,32 @@ In case you want to extend or adapt our editor go ahead and fork this repository
 
 New blocks can be added by creating `new_block.js` in the folder `sql/js/sql_blocks`. Additionally, for the new block to appear in the toolbox you have to import the file (using `<script></script>`) and add it to the toolbox in `index.html`.
 
-The code of a block for our editor looks similiar to the code of the `AND` block:
+The code of a block for our editor looks similiar to the code of the `HAVING` block:
 
-Block definition:
+Block definition (either in JavaScript or JSON):
 
 ```
-
+Blockly.Blocks['select_having'] = {
+    init: function() {
+        this.appendValueInput('haveInput')
+            .setCheck(["COMPARE"])
+            .setAlign(Blockly.ALIGN_LEFT)
+            .appendField("HAVING           ");
+        this.setPreviousStatement(true, ['HAVING']);
+        this.setNextStatement(true, ['HAVING', 'GROUP BY']);
+        this.setColour('#8007f2');
+        this.setTooltip("");
+        this.setHelpUrl("");
+        this.setInputsInline(true);
+    }
+};
 ```
 
 Block function:
 
 ```
-
+Blockly.JavaScript['select_having'] = function(block) {
+    var code = Blockly.JavaScript.statementToCode(block, 'haveInput');
+    return 'having ' + code + ';';
+}
 ```
