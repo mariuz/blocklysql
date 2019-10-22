@@ -1,5 +1,5 @@
 # BlocklySQL - a block-based editor for SQL
-This is a block-based editor for SQL (on the basis of Google's blockly (https://github.com/google/blockly)). 
+This is a block-based editor for SQL (on the basis of Google's blockly (https://github.com/google/blockly)).
 
 ![BlocklySQL example snippet](example.JPG)
 
@@ -7,10 +7,10 @@ This first example uses the database `weather` (by the project dbup2date) and re
 
 ```
 SELECT Wetterstation.Standort, Wettermessung.Max_Windgeschwindigkeit AS #Orkanböen
-FROM Wetterstation 
+FROM Wetterstation
 JOIN Wettermessung ON Wetterstation.S_ID = Wettermessung.Standort_ID
 WHERE Wettermessung.Max_Windgeschwindigkeit > 32.7
-GROUP BY Wetterstation.Standort 
+GROUP BY Wetterstation.Standort
 HAVING COUNT Wettermessung.Max_Windgeschwindigkeit > 5
 ORDER BY Wettermessung.Max_Windgeschwindigkeit DESC;
 ```
@@ -30,25 +30,23 @@ We have created several blocks to build queries with our editor. So far the foll
 
 ## Demo & Example projects
 
-### Classicmodels 
+### Classicmodels
 
 This sample database is from: http://www.mysqltutorial.org/mysql-sample-database.aspx. The `classicmodels` database is a retailer of scale models of classic cars database. It contains typical business data such as customers, products, sales orders, sales order line items, etc.
 
-![Class diagramm classicmodels](classicmodels/classicmodels.JPG)
-
 A demo of our editor using this database can be found here: https://go.uniwue.de/blocklysql. 
 
-### Weather and Football 
+### Weather and Football
 
-In another example project we integrated our editor into the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (`football`, `weather`) to use in the classroom. 
+In another example project we integrated our editor into the project "dbup2date" (https://dbup2date.uni-bayreuth.de/blocklysql/index.html) by the University of Bayreuth, Germany. This project provides daily updated databases (`football`, `weather`) to use in the classroom.
 
 ## Installing
 
-You are welcome to use our editor. You can either integrate it into your online project or run it on your local machine using the software suite XAMPP (https://www.apachefriends.org/de/index.html). 
+You are welcome to use our editor. You can either integrate it into your online project or run it on your local machine using the software suite XAMPP (https://www.apachefriends.org/de/index.html).
 
 ## Contributing
 
-In case you want to extend or adapt our editor go ahead and fork this repository. 
+In case you want to extend or adapt our editor go ahead and fork this repository.
 
 ### Adding new blocks
 
