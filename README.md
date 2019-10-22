@@ -23,7 +23,7 @@ We have created several blocks to build queries with our editor. So far the foll
 | :-: | :-: |
 | ![Statements and clauses](images/statements_clauses.JPG) | `Statements and clauses` |
 | ![Tables and attributes]() | `Tables and attributes` |
-| ![(Logical) operators](images/logical.JPG) | `(Logical) operators` |
+| ![(Logical) operators](images/logical.JPG) | `(Logical) operators` (e.g. AND) |
 | ![(Mathematical) operators]() | `(Mathematical) operators` |
 | ![Value inputs](images/value_inputs.JPG) | `Value inputs` |
 | ![Aggregate functions]() | `Aggregate functions` |
