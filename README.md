@@ -34,7 +34,7 @@ We have created several blocks to build queries with our editor. So far the foll
 
 This sample database is from: http://www.mysqltutorial.org/mysql-sample-database.aspx. The `classicmodels` database is a retailer of scale models of classic cars database. It contains typical business data such as customers, products, sales orders, sales order line items, etc.
 
-A demo of our editor using this database can be found here: https://go.uniwue.de/blocklysql. 
+A demo of our editor using this database can be found here: https://go.uniwue.de/blocklysql.
 
 ### Weather and Football
 
